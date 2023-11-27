@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "trank_o_mat",
+  "version": "${version}",
+  "name": "Trank-O-Mat",
+  "description": "Trank-O-Mat mod introduces a diverse array of beverages with unique properties, available for purchase from beverage vending machines, each offering a random selection of drinks for an immersive and refreshing Minecraft experience.",
+  "authors": [
+    "Markus Bordihn"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.markusbordihn.trankomat.TrankOMat"
+    ]
+  },
+  "mixins": [
+    "trankomat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
+  

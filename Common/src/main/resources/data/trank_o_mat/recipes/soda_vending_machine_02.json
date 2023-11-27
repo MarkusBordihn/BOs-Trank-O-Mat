@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R#R",
+    "|W|",
+    "|U|"
+  ],
+  "key": {
+    "#": {"item": "minecraft:glass_pane"},
+    "R": {"item": "minecraft:redstone"},
+    "U": {"item": "minecraft:bucket"},
+    "|": {"item": "minecraft:iron_bars"},
+    "W": {"item": "minecraft:oak_planks"}
+  },
+  "result": {"item": "trank_o_mat:soda_vending_machine_02"}
+}

@@ -1,0 +1,31 @@
+{
+  "parent": "trank_o_mat:crafting/root",
+  "display": {
+    "icon": {
+      "item": "trank_o_mat:soda_vending_machine_02"
+    },
+    "title": {
+      "translate": "advancements.trank_o_mat.crafting.craft_soda_vending_machine_02.title"
+    },
+    "description": {
+      "translate": "advancements.trank_o_mat.crafting.craft_soda_vending_machine_02.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_soda_vending_machine_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["trank_o_mat:soda_vending_machine_02"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_soda_vending_machine_02"]]
+}

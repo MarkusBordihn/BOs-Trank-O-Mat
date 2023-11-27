@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "trank_o_mat:soda_vending_machine_01"
+    },
+    "title": {
+      "translate": "advancements.trank_o_mat.crafting.root.title"
+    },
+    "description": {
+      "translate": "advancements.trank_o_mat.crafting.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "trank_o_mat:textures/gui/advancements/background.png"
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:crafting_table"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["crafting_table"]]
+}

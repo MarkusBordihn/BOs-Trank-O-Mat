@@ -1,0 +1,14 @@
+{
+  "open_soda_can": {
+    "category": "neutral",
+    "sounds": [
+      "trank_o_mat:open_soda_can"
+    ]
+  },
+  "drop_soda_can": {
+    "category": "neutral",
+    "sounds": [
+      "trank_o_mat:drop_soda_can"
+    ]
+  }
+}
