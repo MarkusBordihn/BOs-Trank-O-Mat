@@ -11,6 +11,7 @@ buildscript {
 plugins {
   id 'com.matthewprenger.cursegradle' version '1.4.0'
   id 'nu.studer.credentials' version '1.0.7'
+  id "com.modrinth.minotaur" version "2.+"
 }
 
 apply plugin: 'java'
@@ -125,4 +126,14 @@ curseforge {
   options {
     forgeGradleIntegration = true
   }
+}
+
+modrinth {
+  token = "${credentials.modrinth_api_token}"
+  projectId = "${modrinth_project_id}"
+  versionNumber = "${version}"
+  versionType = "${modrinth_release_type}"
+  uploadFile = jar
+  gameVersions = ["${minecraft_version}"]
+  loaders = ["forge"]
 }
