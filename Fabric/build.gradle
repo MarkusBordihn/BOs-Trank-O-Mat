@@ -18,7 +18,7 @@ dependencies {
   implementation project(":Common")
 
   // Additional helpful Mods for development
-  modImplementation "curse.maven:jei-238222:4581322"
+  modImplementation "curse.maven:jei-238222:4712867"
 }
 
 loom {
