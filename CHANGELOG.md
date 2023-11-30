@@ -1,4 +1,4 @@
-# Changelog for Trank-O-Mat (1.19.4)
+# Changelog for Trank-O-Mat (1.20)
 
 ## Note
 

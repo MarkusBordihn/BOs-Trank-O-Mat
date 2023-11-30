@@ -20,41 +20,36 @@ package de.markusbordihn.trankomat.tabs;
 
 import de.markusbordihn.trankomat.Constants;
 import de.markusbordihn.trankomat.item.ModItems;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ModTabs {
 
-  protected static CreativeModeTab SODA_VENDING_MACHINES;
+  public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
+      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
-  protected static CreativeModeTab SODA_CANS;
+  protected static RegistryObject<CreativeModeTab> SODA_VENDING_MACHINES =
+      CREATIVE_TABS.register(
+          "soda_vending_machines",
+          () ->
+              CreativeModeTab.builder()
+                  .icon(() -> ModItems.SODA_VENDING_MACHINE_01.get().getDefaultInstance())
+                  .displayItems(new SodaVendingMachineItems())
+                  .title(Component.translatable("itemGroup.trank_o_mat.soda_vending_machines"))
+                  .build());
+
+  protected static RegistryObject<CreativeModeTab> SODA_CANS =
+      CREATIVE_TABS.register(
+          "soda_cans",
+          () ->
+              CreativeModeTab.builder()
+                  .icon(() -> ModItems.GRAY_SODA.get().getDefaultInstance())
+                  .displayItems(new SodaCanItems())
+                  .title(Component.translatable("itemGroup.trank_o_mat.soda_cans"))
+                  .build());
 
   protected ModTabs() {}
-
-  public static void handleCreativeModeTabRegister(CreativeModeTabEvent.Register event) {
-
-    Constants.LOG.info("{} creative mod tabs ...", Constants.LOG_REGISTER_PREFIX);
-
-    SODA_VENDING_MACHINES =
-        event.registerCreativeModeTab(
-            new ResourceLocation(Constants.MOD_ID, "soda_vending_machines"),
-            builder ->
-                builder
-                    .icon(() -> new ItemStack(ModItems.SODA_VENDING_MACHINE_01.get()))
-                    .displayItems(new SodaVendingMachineItems())
-                    .title(Component.translatable("itemGroup.trank_o_mat.soda_vending_machines"))
-                    .build());
-    SODA_CANS =
-        event.registerCreativeModeTab(
-            new ResourceLocation(Constants.MOD_ID, "soda_cans"),
-            builder ->
-                builder
-                    .icon(() -> new ItemStack(ModItems.GRAY_SODA.get()))
-                    .displayItems(new SodaCanItems())
-                    .title(Component.translatable("itemGroup.trank_o_mat.soda_cans"))
-                    .build());
-  }
 }

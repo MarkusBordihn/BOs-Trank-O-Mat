@@ -69,22 +69,22 @@ public class SodaCanItems implements DisplayItemsGenerator {
     output.accept(ModItems.HOLY_SODA.get());
     output.accept(ModItems.UNHOLY_SODA.get());
 
-    output.accept(ModItems.EMPTY_SODA_CAN.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_BLACK.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_BLUE.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_BROWN.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_CYAN.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_GRAY.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_GREEN.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_LIGHT_BLUE.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_LIGHT_GRAY.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_LIME.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_MAGENTA.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_ORANGE.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_PINK.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_PURPLE.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_RED.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_WHITE.get());
-    output.accept(ModItems.EMPTY_SODA_CAN_YELLOW.get());
+    output.accept(ModItems.SODA_CAN_EMPTY.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_BLACK.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_BLUE.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_BROWN.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_CYAN.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_GRAY.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_GREEN.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_LIGHT_BLUE.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_LIGHT_GRAY.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_LIME.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_MAGENTA.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_ORANGE.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_PINK.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_PURPLE.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_RED.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_WHITE.get());
+    output.accept(ModItems.SODA_CAN_EMPTY_YELLOW.get());
   }
 }

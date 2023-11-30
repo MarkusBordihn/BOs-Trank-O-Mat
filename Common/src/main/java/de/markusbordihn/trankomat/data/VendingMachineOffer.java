@@ -54,7 +54,7 @@ public class VendingMachineOffer implements Merchant {
     this.vendingMachineBlock = vendingMachineBlock;
     this.tradingPlayer = player;
     this.blockPos = blockPos;
-    this.isClientSide = player.getLevel().isClientSide();
+    this.isClientSide = player.level().isClientSide();
 
     if (VendingMachineOffers.needsUpdate(this.vendingMachineBlock, this.blockPos)) {
       Constants.LOG.debug(
@@ -143,7 +143,7 @@ public class VendingMachineOffer implements Merchant {
           .ifPresent(
               soundEvent ->
                   serverPlayer
-                      .getLevel()
+                      .level()
                       .playSound(
                           null,
                           playerBlockPos.getX(),
@@ -152,7 +152,7 @@ public class VendingMachineOffer implements Merchant {
                           soundEvent,
                           SoundSource.NEUTRAL,
                           0.5F,
-                          serverPlayer.getLevel().random.nextFloat() * 0.1F + 0.9F));
+                          serverPlayer.level().random.nextFloat() * 0.1F + 0.9F));
       this.lastDropSodaCanSound = Instant.now();
     }
   }

@@ -54,7 +54,7 @@ public class TrankOMat {
         Dist.CLIENT,
         () ->
             () -> {
-              modEventBus.addListener(ModTabs::handleCreativeModeTabRegister);
+              ModTabs.CREATIVE_TABS.register(modEventBus);
               MinecraftForge.EVENT_BUS.addListener(this::onItemTooltip);
             });
   }

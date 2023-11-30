@@ -150,7 +150,7 @@ public class VendingMachineBlock extends Block {
       BlockHitResult hitResult) {
 
     // Store side for additional server and client side effects.
-    if (player.getLevel().isClientSide()) {
+    if (player.level().isClientSide()) {
       Constants.LOG.debug(
           "Player {} used {} with hand {} at {}.",
           player.getName().getString(),

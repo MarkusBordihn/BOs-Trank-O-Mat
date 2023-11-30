@@ -141,70 +141,70 @@ public class ModItems {
       ITEMS.register("unholy_soda", () -> SodaCanItems.getUnholySodaCanItem(new Item.Properties()));
 
   // Empty Soda Cans
-  public static final RegistryObject<Item> EMPTY_SODA_CAN =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY =
       ITEMS.register(
           "soda_can_empty", () -> EmptySodaCanItems.getEmptySodaCanItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_BLACK =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_BLACK =
       ITEMS.register(
           "soda_can_empty_black",
           () -> EmptySodaCanItems.getEmptySodaCanBlackItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_BLUE =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_BLUE =
       ITEMS.register(
           "soda_can_empty_blue",
           () -> EmptySodaCanItems.getEmptySodaCanBlueItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_BROWN =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_BROWN =
       ITEMS.register(
           "soda_can_empty_brown",
           () -> EmptySodaCanItems.getEmptySodaCanBrownItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_CYAN =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_CYAN =
       ITEMS.register(
           "soda_can_empty_cyan",
           () -> EmptySodaCanItems.getEmptySodaCanCyanItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_GRAY =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_GRAY =
       ITEMS.register(
           "soda_can_empty_gray",
           () -> EmptySodaCanItems.getEmptySodaCanGrayItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_GREEN =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_GREEN =
       ITEMS.register(
           "soda_can_empty_green",
           () -> EmptySodaCanItems.getEmptySodaCanGreenItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_LIGHT_BLUE =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_LIGHT_BLUE =
       ITEMS.register(
           "soda_can_empty_light_blue",
           () -> EmptySodaCanItems.getEmptySodaCanLightBlueItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_LIGHT_GRAY =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_LIGHT_GRAY =
       ITEMS.register(
           "soda_can_empty_light_gray",
           () -> EmptySodaCanItems.getEmptySodaCanLightGrayItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_LIME =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_LIME =
       ITEMS.register(
           "soda_can_empty_lime",
           () -> EmptySodaCanItems.getEmptySodaCanLimeItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_MAGENTA =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_MAGENTA =
       ITEMS.register(
           "soda_can_empty_magenta",
           () -> EmptySodaCanItems.getEmptySodaCanMagentaItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_ORANGE =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_ORANGE =
       ITEMS.register(
           "soda_can_empty_orange",
           () -> EmptySodaCanItems.getEmptySodaCanOrangeItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_PINK =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_PINK =
       ITEMS.register(
           "soda_can_empty_pink",
           () -> EmptySodaCanItems.getEmptySodaCanPinkItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_PURPLE =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_PURPLE =
       ITEMS.register(
           "soda_can_empty_purple",
           () -> EmptySodaCanItems.getEmptySodaCanPurpleItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_RED =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_RED =
       ITEMS.register(
           "soda_can_empty_red",
           () -> EmptySodaCanItems.getEmptySodaCanRedItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_WHITE =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_WHITE =
       ITEMS.register(
           "soda_can_empty_white",
           () -> EmptySodaCanItems.getEmptySodaCanWhiteItem(new Item.Properties()));
-  public static final RegistryObject<Item> EMPTY_SODA_CAN_YELLOW =
+  public static final RegistryObject<Item> SODA_CAN_EMPTY_YELLOW =
       ITEMS.register(
           "soda_can_empty_yellow",
           () -> EmptySodaCanItems.getEmptySodaCanYellowItem(new Item.Properties()));
