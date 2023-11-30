@@ -24,7 +24,7 @@ import de.markusbordihn.trankomat.data.DepositMachineOffer;
 import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -121,7 +121,7 @@ public class DepositMachineBlock extends Block {
       LivingEntity livingEntity,
       ItemStack itemStack) {
     BlockState topBlockState =
-        Registry.BLOCK
+        BuiltInRegistries.BLOCK
             .get(new ResourceLocation("trank_o_mat:deposit_machine_top"))
             .defaultBlockState();
     level.setBlock(

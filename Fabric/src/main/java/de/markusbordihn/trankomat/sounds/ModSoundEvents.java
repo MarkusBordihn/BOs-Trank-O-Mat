@@ -21,6 +21,7 @@ package de.markusbordihn.trankomat.sounds;
 
 import de.markusbordihn.trankomat.Constants;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 
@@ -30,16 +31,19 @@ public class ModSoundEvents {
 
   public static void registerModSoundEvents() {
     Registry.register(
-        Registry.SOUND_EVENT,
+        BuiltInRegistries.SOUND_EVENT,
         Constants.MOD_ID_PREFIX + "crash_soda_can",
-        new SoundEvent(new ResourceLocation(Constants.MOD_ID_PREFIX + "crash_soda_can")));
+        SoundEvent.createVariableRangeEvent(
+            new ResourceLocation(Constants.MOD_ID_PREFIX + "crash_soda_can")));
     Registry.register(
-        Registry.SOUND_EVENT,
+        BuiltInRegistries.SOUND_EVENT,
         Constants.MOD_ID_PREFIX + "open_soda_can",
-        new SoundEvent(new ResourceLocation(Constants.MOD_ID_PREFIX + "open_soda_can")));
+        SoundEvent.createVariableRangeEvent(
+            new ResourceLocation(Constants.MOD_ID_PREFIX + "open_soda_can")));
     Registry.register(
-        Registry.SOUND_EVENT,
+        BuiltInRegistries.SOUND_EVENT,
         Constants.MOD_ID_PREFIX + "drop_soda_can",
-        new SoundEvent(new ResourceLocation(Constants.MOD_ID_PREFIX + "drop_soda_can")));
+        SoundEvent.createVariableRangeEvent(
+            new ResourceLocation(Constants.MOD_ID_PREFIX + "drop_soda_can")));
   }
 }

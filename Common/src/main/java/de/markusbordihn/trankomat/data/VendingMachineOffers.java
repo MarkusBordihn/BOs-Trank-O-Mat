@@ -29,7 +29,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
@@ -104,7 +104,7 @@ public class VendingMachineOffers {
     }
 
     // Get all registered soda can items.
-    Registry.ITEM.stream()
+    BuiltInRegistries.ITEM.stream()
         .filter(item -> item.asItem() instanceof SodaCanItem)
         .forEach(
             item -> {

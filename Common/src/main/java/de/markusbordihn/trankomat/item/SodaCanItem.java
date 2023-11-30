@@ -26,7 +26,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -76,7 +76,7 @@ public class SodaCanItem extends Item {
   public Item getEmptySodaCanItem() {
     // Try to find empty soda can for the given color from registry
     Item registryItem =
-        Registry.ITEM
+        BuiltInRegistries.ITEM
             .getOptional(
                 new ResourceLocation(
                     Constants.MOD_ID, "soda_can_empty_" + this.getColor().getName().toLowerCase()))
@@ -84,7 +84,7 @@ public class SodaCanItem extends Item {
 
     // Fallback to gray empty soda can or glass bottle
     if (registryItem == null) {
-      return Registry.ITEM
+      return BuiltInRegistries.ITEM
           .getOptional(new ResourceLocation(Constants.MOD_ID, "soda_can_empty_gray"))
           .orElse(Items.GLASS_BOTTLE);
     }
@@ -108,7 +108,7 @@ public class SodaCanItem extends Item {
     }
 
     // Play open soda can sound.
-    Registry.SOUND_EVENT
+    BuiltInRegistries.SOUND_EVENT
         .getOptional(new ResourceLocation("trank_o_mat:open_soda_can"))
         .ifPresent(
             soundEvent ->

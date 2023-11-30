@@ -1,9 +1,13 @@
-# Changelog for Trank-O-Mat (1.19.2)
+# Changelog for Trank-O-Mat (1.19.3)
 
 ## Note
 
 This change log includes the summarized changes.
 For the full changelog, please go to the [GitHub History][history] instead.
+
+### 1.1.2
+
+- Improved Fabric server compatibility and fixed some smaller issues.
 
 ### 1.1.0
 

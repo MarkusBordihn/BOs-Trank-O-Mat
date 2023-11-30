@@ -34,15 +34,21 @@ public class ModSoundEvents {
   public static final RegistryObject<SoundEvent> SODA_CAN_CRASH =
       SOUNDS.register(
           "crash_soda_can",
-          () -> new SoundEvent(new ResourceLocation(Constants.MOD_ID, "crash_soda_can")));
+          () ->
+              SoundEvent.createVariableRangeEvent(
+                  new ResourceLocation(Constants.MOD_ID, "crash_soda_can")));
   public static final RegistryObject<SoundEvent> SODA_CAN_OPEN =
       SOUNDS.register(
           "open_soda_can",
-          () -> new SoundEvent(new ResourceLocation(Constants.MOD_ID, "open_soda_can")));
+          () ->
+              SoundEvent.createVariableRangeEvent(
+                  new ResourceLocation(Constants.MOD_ID, "open_soda_can")));
   public static final RegistryObject<SoundEvent> DROP_SODA_CAN =
       SOUNDS.register(
           "drop_soda_can",
-          () -> new SoundEvent(new ResourceLocation(Constants.MOD_ID, "drop_soda_can")));
+          () ->
+              SoundEvent.createVariableRangeEvent(
+                  new ResourceLocation(Constants.MOD_ID, "drop_soda_can")));
 
   protected ModSoundEvents() {}
 }

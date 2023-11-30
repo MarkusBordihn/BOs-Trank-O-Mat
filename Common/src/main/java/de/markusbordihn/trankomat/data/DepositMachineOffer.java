@@ -26,7 +26,7 @@ import java.time.Instant;
 import java.util.OptionalInt;
 import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
@@ -138,7 +138,7 @@ public class DepositMachineOffer implements Merchant {
     if (player instanceof ServerPlayer serverPlayer
         && this.lastDropSodaCanSound.getEpochSecond() != Instant.now().getEpochSecond()) {
       BlockPos playerBlockPos = serverPlayer.blockPosition();
-      Registry.SOUND_EVENT
+      BuiltInRegistries.SOUND_EVENT
           .getOptional(new ResourceLocation("trank_o_mat:crash_soda_can"))
           .ifPresent(
               soundEvent ->
