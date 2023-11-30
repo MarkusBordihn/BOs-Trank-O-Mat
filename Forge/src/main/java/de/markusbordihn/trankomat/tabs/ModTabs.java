@@ -22,9 +22,7 @@ import de.markusbordihn.trankomat.Constants;
 import de.markusbordihn.trankomat.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTab.Output;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.CreativeModeTabEvent;
 
@@ -42,91 +40,21 @@ public class ModTabs {
 
     SODA_VENDING_MACHINES =
         event.registerCreativeModeTab(
-            new ResourceLocation(Constants.MOD_ID, "mob_farm"),
-            builder -> {
-              builder
-                  .icon(() -> new ItemStack(ModItems.SODA_VENDING_MACHINE_01.get()))
-                  .displayItems(ModTabs::addSodaVendingMachines)
-                  .title(Component.translatable("itemGroup.trank_o_mat.soda_vending_machines"))
-                  .build();
-            });
+            new ResourceLocation(Constants.MOD_ID, "soda_vending_machines"),
+            builder ->
+                builder
+                    .icon(() -> new ItemStack(ModItems.SODA_VENDING_MACHINE_01.get()))
+                    .displayItems(new SodaVendingMachineItems())
+                    .title(Component.translatable("itemGroup.trank_o_mat.soda_vending_machines"))
+                    .build());
     SODA_CANS =
         event.registerCreativeModeTab(
-            new ResourceLocation(Constants.MOD_ID, "tools"),
-            builder -> {
-              builder
-                  .icon(() -> new ItemStack(ModItems.GRAY_SODA.get()))
-                  .displayItems(ModTabs::addSodaCans)
-                  .title(Component.translatable("itemGroup.trank_o_mat.soda_cans"))
-                  .build();
-            });
-  }
-
-  public static void addSodaVendingMachines(
-      FeatureFlagSet featureFlagSet, Output outputTab, boolean hasPermissions) {
-    outputTab.accept(ModItems.SOFA_DEPOSIT_MACHINE_01.get());
-    outputTab.accept(ModItems.SODA_VENDING_MACHINE_01.get());
-    outputTab.accept(ModItems.SODA_VENDING_MACHINE_02.get());
-  }
-
-  public static void addSodaCans(
-      FeatureFlagSet featureFlagSet, Output outputTab, boolean hasPermissions) {
-    outputTab.accept(ModItems.BLACK_SODA.get());
-    outputTab.accept(ModItems.BLUE_SODA.get());
-    outputTab.accept(ModItems.BROWN_SODA.get());
-    outputTab.accept(ModItems.CYAN_SODA.get());
-    outputTab.accept(ModItems.GRAY_SODA.get());
-    outputTab.accept(ModItems.GREEN_SODA.get());
-    outputTab.accept(ModItems.LIGHT_BLUE_SODA.get());
-    outputTab.accept(ModItems.LIGHT_GRAY_SODA.get());
-    outputTab.accept(ModItems.LIME_SODA.get());
-    outputTab.accept(ModItems.MAGENTA_SODA.get());
-    outputTab.accept(ModItems.ORANGE_SODA.get());
-    outputTab.accept(ModItems.PINK_SODA.get());
-    outputTab.accept(ModItems.PURPLE_SODA.get());
-    outputTab.accept(ModItems.RED_SODA.get());
-    outputTab.accept(ModItems.WHITE_SODA.get());
-    outputTab.accept(ModItems.YELLOW_SODA.get());
-
-    outputTab.accept(ModItems.VITA_AQUA_SODA.get());
-    outputTab.accept(ModItems.SPEEDY_SODA.get());
-    outputTab.accept(ModItems.SODA_LIGHT_SODA.get());
-    outputTab.accept(ModItems.CATERPILLAR_SODA.get());
-    outputTab.accept(ModItems.HASTY_ALE_SODA.get());
-    outputTab.accept(ModItems.WITHER_ALE_SODA.get());
-    outputTab.accept(ModItems.CATS_COKE_SODA.get());
-    outputTab.accept(ModItems.FIERY_CITRON_JUICE_SODA.get());
-    outputTab.accept(ModItems.POSEIDONS_TONIC_WATER_SODA.get());
-    outputTab.accept(ModItems.HADES_LEMONADE_SODA.get());
-    outputTab.accept(ModItems.GUARDIANS_CORAL_JUICE_SODA.get());
-    outputTab.accept(ModItems.WITCHES_ROOT_BEER_SODA.get());
-    outputTab.accept(ModItems.ARONS_GRAPE_JUICE_SODA.get());
-    outputTab.accept(ModItems.KAWORRUS_FAVOURITE_COKE_SODA.get());
-    outputTab.accept(ModItems.VILLAGERS_ALE_SODA.get());
-    outputTab.accept(ModItems.ILLAGERS_COKE_SODA.get());
-    outputTab.accept(ModItems.PLUTONIUM_LEMONADE_SODA.get());
-    outputTab.accept(ModItems.WANDERS_ALE_SODA.get());
-    outputTab.accept(ModItems.MINERS_JUICE_SODA.get());
-    outputTab.accept(ModItems.WARRIORS_LEMONADE_SODA.get());
-    outputTab.accept(ModItems.HOLY_SODA.get());
-    outputTab.accept(ModItems.UNHOLY_SODA.get());
-
-    outputTab.accept(ModItems.EMPTY_SODA_CAN.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_BLACK.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_BLUE.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_BROWN.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_CYAN.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_GRAY.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_GREEN.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_LIGHT_GRAY.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_LIME.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_MAGENTA.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_ORANGE.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_PINK.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_PURPLE.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_RED.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_WHITE.get());
-    outputTab.accept(ModItems.EMPTY_SODA_CAN_YELLOW.get());
+            new ResourceLocation(Constants.MOD_ID, "soda_cans"),
+            builder ->
+                builder
+                    .icon(() -> new ItemStack(ModItems.GRAY_SODA.get()))
+                    .displayItems(new SodaCanItems())
+                    .title(Component.translatable("itemGroup.trank_o_mat.soda_cans"))
+                    .build());
   }
 }

@@ -210,7 +210,7 @@ public class ModItems {
           () -> EmptySodaCanItems.getEmptySodaCanYellowItem(new Item.Properties()));
 
   // Block Items
-  public static final RegistryObject<Item> SOFA_DEPOSIT_MACHINE_01 =
+  public static final RegistryObject<Item> SODA_DEPOSIT_MACHINE_01 =
       ITEMS.register(
           "soda_deposit_machine_01",
           () -> new BlockItem(ModBlocks.SODA_DEPOSIT_MACHINE_01.get(), new Item.Properties()));
