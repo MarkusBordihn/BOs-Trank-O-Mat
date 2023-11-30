@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "de.markusbordihn.trankomat.TrankOMat"
+    ],
+    "client": [
+      "de.markusbordihn.trankomat.TrankOMatClient"
     ]
   },
   "mixins": [
