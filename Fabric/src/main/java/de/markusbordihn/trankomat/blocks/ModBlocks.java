@@ -4,6 +4,7 @@ import de.markusbordihn.trankomat.Constants;
 import de.markusbordihn.trankomat.block.SodaDepositMachineBlocks;
 import de.markusbordihn.trankomat.block.SodaVendingMachineBlocks;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 
 public class ModBlocks {
@@ -24,22 +25,27 @@ public class ModBlocks {
 
     Constants.LOG.info("{} Deposit Machine Blocks ...", Constants.LOG_REGISTER_PREFIX);
     Registry.register(
-        Registry.BLOCK, Constants.MOD_ID_PREFIX + "deposit_machine_top", DEPOSIT_MACHINE_TOP);
+        BuiltInRegistries.BLOCK,
+        Constants.MOD_ID_PREFIX + "deposit_machine_top",
+        DEPOSIT_MACHINE_TOP);
     Registry.register(
-        Registry.BLOCK,
+        BuiltInRegistries.BLOCK,
         Constants.MOD_ID_PREFIX + "soda_deposit_machine_01",
         SODA_DEPOSIT_MACHINE_01);
 
     Constants.LOG.info("{} Vending Machine Blocks ...", Constants.LOG_REGISTER_PREFIX);
-    Registry.register(Registry.BLOCK, Constants.MOD_ID_PREFIX + "vending_machine", VENDING_MACHINE);
     Registry.register(
-        Registry.BLOCK, Constants.MOD_ID_PREFIX + "vending_machine_top", VENDING_MACHINE_TOP);
+        BuiltInRegistries.BLOCK, Constants.MOD_ID_PREFIX + "vending_machine", VENDING_MACHINE);
     Registry.register(
-        Registry.BLOCK,
+        BuiltInRegistries.BLOCK,
+        Constants.MOD_ID_PREFIX + "vending_machine_top",
+        VENDING_MACHINE_TOP);
+    Registry.register(
+        BuiltInRegistries.BLOCK,
         Constants.MOD_ID_PREFIX + "soda_vending_machine_01",
         SODA_VENDING_MACHINE_01);
     Registry.register(
-        Registry.BLOCK,
+        BuiltInRegistries.BLOCK,
         Constants.MOD_ID_PREFIX + "soda_vending_machine_02",
         SODA_VENDING_MACHINE_02);
   }

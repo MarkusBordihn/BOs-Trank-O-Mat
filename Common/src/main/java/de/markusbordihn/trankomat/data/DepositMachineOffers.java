@@ -29,7 +29,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -95,7 +95,7 @@ public class DepositMachineOffers {
     // Get all registered empty soda can items.
     for (DyeColor dyeColor : DyeColor.values()) {
       Item emptySodaCanRegistryItem =
-          Registry.ITEM
+          BuiltInRegistries.ITEM
               .getOptional(
                   new ResourceLocation(
                       Constants.MOD_ID, "soda_can_empty_" + dyeColor.getName().toLowerCase()))

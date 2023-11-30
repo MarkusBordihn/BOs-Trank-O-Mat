@@ -22,6 +22,7 @@ package de.markusbordihn.trankomat.item;
 import de.markusbordihn.trankomat.Constants;
 import de.markusbordihn.trankomat.blocks.ModBlocks;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
@@ -137,114 +138,164 @@ public class ModItems {
   public static void registerModItems() {
     Constants.LOG.info("{} Soda Can Items ...", Constants.LOG_REGISTER_PREFIX);
 
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "black_soda", BLACK_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "blue_soda", BLUE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "brown_soda", BROWN_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "cyan_soda", CYAN_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "gray_soda", GRAY_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "green_soda", GREEN_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "light_blue_soda", LIGHT_BLUE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "light_gray_soda", LIGHT_GRAY_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "lime_soda", LIME_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "magenta_soda", MAGENTA_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "orange_soda", ORANGE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "pink_soda", PINK_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "purple_soda", PURPLE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "red_soda", RED_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "white_soda", WHITE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "yellow_soda", YELLOW_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "black_soda", BLACK_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "blue_soda", BLUE_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "brown_soda", BROWN_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "cyan_soda", CYAN_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "gray_soda", GRAY_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "green_soda", GREEN_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "light_blue_soda", LIGHT_BLUE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "light_gray_soda", LIGHT_GRAY_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "lime_soda", LIME_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "magenta_soda", MAGENTA_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "orange_soda", ORANGE_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "pink_soda", PINK_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "purple_soda", PURPLE_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "red_soda", RED_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "white_soda", WHITE_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "yellow_soda", YELLOW_SODA);
 
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "vita_aqua_soda", VITA_AQUA_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "speedy_soda", SPEEDY_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_light", SODA_LIGHT_SODA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "caterpillar_soda", CATERPILLAR_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "hasty_ale", HASTY_ALE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "wither_ale", WITHER_ALE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "cats_coke", CATS_COKE_SODA);
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "vita_aqua_soda", VITA_AQUA_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "speedy_soda", SPEEDY_SODA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "fiery_citron_juice", FIERY_CITRON_JUICE_SODA);
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "soda_light", SODA_LIGHT_SODA);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "caterpillar_soda", CATERPILLAR_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "hasty_ale", HASTY_ALE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "wither_ale", WITHER_ALE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "cats_coke", CATS_COKE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "fiery_citron_juice",
+        FIERY_CITRON_JUICE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "poseidons_tonic_water",
         POSEIDONS_TONIC_WATER_SODA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "hades_lemonade", HADES_LEMONADE_SODA);
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "hades_lemonade", HADES_LEMONADE_SODA);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "guardians_coral_juice",
         GUARDIANS_CORAL_JUICE_SODA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "witches_root_beer", WITCHES_ROOT_BEER_SODA);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "witches_root_beer",
+        WITCHES_ROOT_BEER_SODA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "arons_grape_juice", ARONS_GRAPE_JUICE_SODA);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "arons_grape_juice",
+        ARONS_GRAPE_JUICE_SODA);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "kaworrus_favourite_coke",
         KAWORRUS_FAVOURITE_COKE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "villagers_ale", VILLAGERS_ALE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "illagers_coke", ILLAGERS_COKE_SODA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "plutonium_lemonade", PLUTONIUM_LEMONADE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "wanders_ale", WANDERS_ALE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "miners_juice", MINERS_JUICE_SODA);
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "villagers_ale", VILLAGERS_ALE_SODA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "warriors_lemonade", WARRIORS_LEMONADE_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "holy_soda", HOLY_SODA);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "unholy_soda", UNHOLY_SODA);
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "illagers_coke", ILLAGERS_COKE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "plutonium_lemonade",
+        PLUTONIUM_LEMONADE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "wanders_ale", WANDERS_ALE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "miners_juice", MINERS_JUICE_SODA);
+    Registry.register(
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "warriors_lemonade",
+        WARRIORS_LEMONADE_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "holy_soda", HOLY_SODA);
+    Registry.register(BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "unholy_soda", UNHOLY_SODA);
 
     Constants.LOG.info("{} Empty Soda Can Items ...", Constants.LOG_REGISTER_PREFIX);
 
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty", SODA_CAN_EMPTY);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_black", SODA_CAN_EMPTY_BLACK);
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty", SODA_CAN_EMPTY);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_blue", SODA_CAN_EMPTY_BLUE);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_black",
+        SODA_CAN_EMPTY_BLACK);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_brown", SODA_CAN_EMPTY_BROWN);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_blue",
+        SODA_CAN_EMPTY_BLUE);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_cyan", SODA_CAN_EMPTY_CYAN);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_brown",
+        SODA_CAN_EMPTY_BROWN);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_gray", SODA_CAN_EMPTY_GRAY);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_cyan",
+        SODA_CAN_EMPTY_CYAN);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_green", SODA_CAN_EMPTY_GREEN);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_gray",
+        SODA_CAN_EMPTY_GRAY);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_green",
+        SODA_CAN_EMPTY_GREEN);
+    Registry.register(
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "soda_can_empty_light_blue",
         SODA_CAN_EMPTY_LIGHT_BLUE);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "soda_can_empty_light_gray",
         SODA_CAN_EMPTY_LIGHT_GRAY);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_lime", SODA_CAN_EMPTY_LIME);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_lime",
+        SODA_CAN_EMPTY_LIME);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_magenta", SODA_CAN_EMPTY_MAGENTA);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_magenta",
+        SODA_CAN_EMPTY_MAGENTA);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_orange", SODA_CAN_EMPTY_ORANGE);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_orange",
+        SODA_CAN_EMPTY_ORANGE);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_pink", SODA_CAN_EMPTY_PINK);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_pink",
+        SODA_CAN_EMPTY_PINK);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_purple", SODA_CAN_EMPTY_PURPLE);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_purple",
+        SODA_CAN_EMPTY_PURPLE);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_red", SODA_CAN_EMPTY_RED);
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_red", SODA_CAN_EMPTY_RED);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_white", SODA_CAN_EMPTY_WHITE);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_white",
+        SODA_CAN_EMPTY_WHITE);
     Registry.register(
-        Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_yellow", SODA_CAN_EMPTY_YELLOW);
+        BuiltInRegistries.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_can_empty_yellow",
+        SODA_CAN_EMPTY_YELLOW);
 
     Constants.LOG.info("{} Block Items ...", Constants.LOG_REGISTER_PREFIX);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "soda_deposit_machine_01",
         SODA_DEPOSIT_MACHINE_01);
-    Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "vending_machine", VENDING_MACHINE);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM, Constants.MOD_ID_PREFIX + "vending_machine", VENDING_MACHINE);
+    Registry.register(
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "soda_vending_machine_01",
         SODA_VENDING_MACHINE_01);
     Registry.register(
-        Registry.ITEM,
+        BuiltInRegistries.ITEM,
         Constants.MOD_ID_PREFIX + "soda_vending_machine_02",
         SODA_VENDING_MACHINE_02);
   }
