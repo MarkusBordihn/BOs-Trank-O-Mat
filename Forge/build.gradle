@@ -84,7 +84,7 @@ dependencies {
   compileOnly project(":Common")
 
   // Additional helpful Mods for development
-  runtimeOnly fg.deobf("curse.maven:jei-238222:3922508")
+  runtimeOnly fg.deobf("curse.maven:jei-238222:4712866")
 }
 
 tasks.withType(JavaCompile) {
