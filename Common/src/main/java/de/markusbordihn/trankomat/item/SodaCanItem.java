@@ -28,7 +28,6 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -168,7 +167,7 @@ public class SodaCanItem extends Item {
     }
 
     // Finish drinking animation
-    level.gameEvent(livingEntity, GameEvent.DRINKING_FINISH, livingEntity.eyeBlockPosition());
+    livingEntity.gameEvent(GameEvent.DRINK);
 
     return itemStack;
   }
@@ -200,31 +199,31 @@ public class SodaCanItem extends Item {
     switch (this.getTier()) {
       case TIER_0:
         componentList.add(
-            new TranslatableComponent(
+            Component.translatable(
                     Constants.TEXT_PREFIX + "soda_can_tier", getTier().getTierLevel())
                 .withStyle(ChatFormatting.GREEN));
         break;
       case TIER_1:
         componentList.add(
-            new TranslatableComponent(
+            Component.translatable(
                     Constants.TEXT_PREFIX + "soda_can_tier", getTier().getTierLevel())
                 .withStyle(ChatFormatting.YELLOW));
         break;
       case TIER_2:
         componentList.add(
-            new TranslatableComponent(
+            Component.translatable(
                     Constants.TEXT_PREFIX + "soda_can_tier", getTier().getTierLevel())
                 .withStyle(ChatFormatting.GOLD));
         break;
       case TIER_3:
         componentList.add(
-            new TranslatableComponent(
+            Component.translatable(
                     Constants.TEXT_PREFIX + "soda_can_tier", getTier().getTierLevel())
                 .withStyle(ChatFormatting.RED));
         break;
       case TIER_4:
         componentList.add(
-            new TranslatableComponent(
+            Component.translatable(
                     Constants.TEXT_PREFIX + "soda_can_tier", getTier().getTierLevel())
                 .withStyle(ChatFormatting.DARK_PURPLE));
         break;
@@ -232,7 +231,7 @@ public class SodaCanItem extends Item {
         break;
     }
     componentList.add(
-        new TranslatableComponent(getDescriptionId() + ".description")
+        Component.translatable(getDescriptionId() + ".description")
             .withStyle(net.minecraft.ChatFormatting.GRAY));
   }
 }

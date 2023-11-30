@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench by Markus Bordihn",
+  "render_type": "cutout_mipped",
   "texture_size": [64, 64],
   "textures": {
     "particle": "trank_o_mat:block/soda_deposit_machine/soda_deposit_machine_01",

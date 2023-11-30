@@ -23,7 +23,6 @@ import de.markusbordihn.trankomat.Constants;
 import java.util.List;
 import javax.annotation.Nullable;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -44,7 +43,7 @@ public class EmptySodaCanItem extends Item {
     super.appendHoverText(itemStack, level, componentList, tooltipFlag);
 
     componentList.add(
-        new TranslatableComponent(Constants.ITEM_PREFIX + "soda_can_empty.description")
+        Component.translatable(Constants.ITEM_PREFIX + "soda_can_empty.description")
             .withStyle(net.minecraft.ChatFormatting.GRAY));
   }
 }

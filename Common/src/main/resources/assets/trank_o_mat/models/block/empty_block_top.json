@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench by Markus Bordihn",
+  "render_type": "translucent",
   "textures": {
     "particle": "trank_o_mat:block/transparent",
     "texture": "trank_o_mat:block/transparent"

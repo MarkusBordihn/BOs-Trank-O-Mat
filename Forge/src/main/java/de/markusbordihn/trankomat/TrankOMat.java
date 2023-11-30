@@ -20,14 +20,11 @@
 package de.markusbordihn.trankomat;
 
 import de.markusbordihn.trankomat.block.ModBlocks;
-import de.markusbordihn.trankomat.client.renderer.BlockRenderer;
 import de.markusbordihn.trankomat.item.ModItems;
 import de.markusbordihn.trankomat.sounds.ModSoundEvents;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -53,9 +50,6 @@ public class TrankOMat {
     // Some code like events require special initialization from the
     // loader specific code.
     MinecraftForge.EVENT_BUS.addListener(this::onItemTooltip);
-
-    DistExecutor.unsafeRunWhenOn(
-        Dist.CLIENT, () -> () -> modEventBus.addListener(BlockRenderer::registerBlockRenderer));
   }
 
   // This method exists as a wrapper for the code in the Common project.

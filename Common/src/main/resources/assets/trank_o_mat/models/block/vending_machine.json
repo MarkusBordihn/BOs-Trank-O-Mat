@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench by Markus Bordihn",
+  "render_type": "cutout_mipped",
   "texture_size": [64, 64],
   "textures": {
     "0": "trank_o_mat:block/vending_machine",

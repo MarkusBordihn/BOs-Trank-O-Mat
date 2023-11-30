@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench by Markus Bordihn",
+  "render_type": "cutout_mipped",
   "texture_size": [128, 128],
   "textures": {
     "particle": "trank_o_mat:block/soda_vending_machine/soda_vending_machine_01",
