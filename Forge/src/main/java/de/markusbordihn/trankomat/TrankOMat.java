@@ -50,12 +50,13 @@ public class TrankOMat {
     Constants.LOG.info("{} Sound Events ...", Constants.LOG_REGISTER_PREFIX);
     ModSoundEvents.SOUNDS.register(modEventBus);
 
-    // Some code like events require special initialization from the
-    // loader specific code.
-    MinecraftForge.EVENT_BUS.addListener(this::onItemTooltip);
-
     DistExecutor.unsafeRunWhenOn(
-        Dist.CLIENT, () -> () -> modEventBus.addListener(BlockRenderer::registerBlockRenderer));
+        Dist.CLIENT,
+        () ->
+            () -> {
+              modEventBus.addListener(BlockRenderer::registerBlockRenderer);
+              MinecraftForge.EVENT_BUS.addListener(this::onItemTooltip);
+            });
   }
 
   // This method exists as a wrapper for the code in the Common project.
