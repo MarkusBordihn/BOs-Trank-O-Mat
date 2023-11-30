@@ -35,6 +35,10 @@ public class BlockRenderer {
     event.enqueueWork(
         () -> {
           ItemBlockRenderTypes.setRenderLayer(
+              ModBlocks.DEPOSIT_MACHINE_TOP.get(), RenderType.translucent());
+          ItemBlockRenderTypes.setRenderLayer(
+              ModBlocks.SODA_DEPOSIT_MACHINE_01.get(), RenderType.cutoutMipped());
+          ItemBlockRenderTypes.setRenderLayer(
               ModBlocks.VENDING_MACHINE_TOP.get(), RenderType.translucent());
           ItemBlockRenderTypes.setRenderLayer(
               ModBlocks.SODA_VENDING_MACHINE_01.get(), RenderType.cutoutMipped());

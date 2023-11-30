@@ -33,6 +33,8 @@ public class Constants {
 
   // Prefixes
   public static final String TEXT_PREFIX = "text." + MOD_ID + ".";
+  public static final String BLOCK_PREFIX = "block." + MOD_ID + ".";
+  public static final String ITEM_PREFIX = "item." + MOD_ID + ".";
 
   // Colors
   public static final int FONT_COLOR_BLACK = 0;

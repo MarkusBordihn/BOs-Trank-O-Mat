@@ -1,4 +1,10 @@
 {
+  "crash_soda_can": {
+    "category": "neutral",
+    "sounds": [
+      "trank_o_mat:crash_soda_can"
+    ]
+  },
   "open_soda_can": {
     "category": "neutral",
     "sounds": [

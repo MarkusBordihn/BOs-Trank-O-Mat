@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "TrankOMatMixin"
   ],
   "injectors": {
     "defaultRequire": 1

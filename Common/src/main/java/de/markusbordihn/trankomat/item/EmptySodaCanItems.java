@@ -25,71 +25,71 @@ public class EmptySodaCanItems {
 
   protected EmptySodaCanItems() {}
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_BLACK(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanBlackItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_BLUE(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanBlueItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_BROWN(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanBrownItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_CYAN(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanCyanItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_GRAY(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanGrayItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_GREEN(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanGreenItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_LIGHT_BLUE(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanLightBlueItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_LIGHT_GRAY(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanLightGrayItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_LIME(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanLimeItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_MAGENTA(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanMagentaItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_ORANGE(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanOrangeItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_PINK(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanPinkItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_PURPLE(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanPurpleItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_RED(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanRedItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_WHITE(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanWhiteItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 
-  public static EmptySodaCanItem EMPTY_SODA_CAN_YELLOW(Item.Properties properties) {
+  public static EmptySodaCanItem getEmptySodaCanYellowItem(Item.Properties properties) {
     return new EmptySodaCanItem(properties.stacksTo(16));
   }
 }

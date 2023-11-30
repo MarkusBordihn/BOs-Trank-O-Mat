@@ -29,7 +29,7 @@ public class SodaCanItems {
 
   protected SodaCanItems() {}
 
-  public static SodaCanItem BLACK_SODA(Item.Properties properties) {
+  public static SodaCanItem getBlackSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -37,7 +37,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.BLINDNESS, 600, 1, false, false));
   }
 
-  public static SodaCanItem BLUE_SODA(Item.Properties properties) {
+  public static SodaCanItem getBlueSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -45,7 +45,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 1, false, false));
   }
 
-  public static SodaCanItem BROWN_SODA(Item.Properties properties) {
+  public static SodaCanItem getBrownSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -53,7 +53,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.HUNGER, 600, 1, false, false));
   }
 
-  public static SodaCanItem CYAN_SODA(Item.Properties properties) {
+  public static SodaCanItem getCyanSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -61,7 +61,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.CONFUSION, 600, 1, false, false));
   }
 
-  public static SodaCanItem GRAY_SODA(Item.Properties properties) {
+  public static SodaCanItem getGraySodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -69,7 +69,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.UNLUCK, 600, 1, false, false));
   }
 
-  public static SodaCanItem GREEN_SODA(Item.Properties properties) {
+  public static SodaCanItem getGreenSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -77,7 +77,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.POISON, 600, 1, false, false));
   }
 
-  public static SodaCanItem LIGHT_BLUE_SODA(Item.Properties properties) {
+  public static SodaCanItem getLightBlueSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -85,7 +85,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.INVISIBILITY, 600, 1, false, false));
   }
 
-  public static SodaCanItem LIGHT_GRAY_SODA(Item.Properties properties) {
+  public static SodaCanItem getLightGraySodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -93,7 +93,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.WEAKNESS, 600, 1, false, false));
   }
 
-  public static SodaCanItem LIME_SODA(Item.Properties properties) {
+  public static SodaCanItem getLimeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -101,7 +101,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.JUMP, 600, 1, false, false));
   }
 
-  public static SodaCanItem MAGENTA_SODA(Item.Properties properties) {
+  public static SodaCanItem getMagentaSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -109,7 +109,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.LEVITATION, 600, 1, false, false));
   }
 
-  public static SodaCanItem ORANGE_SODA(Item.Properties properties) {
+  public static SodaCanItem getOrangeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -117,7 +117,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1, false, false));
   }
 
-  public static SodaCanItem PINK_SODA(Item.Properties properties) {
+  public static SodaCanItem getPinkSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -125,7 +125,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 1, false, false));
   }
 
-  public static SodaCanItem PURPLE_SODA(Item.Properties properties) {
+  public static SodaCanItem getPurpleSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -133,7 +133,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.REGENERATION, 600, 1, false, false));
   }
 
-  public static SodaCanItem RED_SODA(Item.Properties properties) {
+  public static SodaCanItem getRedSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -141,7 +141,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 1, false, false));
   }
 
-  public static SodaCanItem WHITE_SODA(Item.Properties properties) {
+  public static SodaCanItem getWhiteSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -149,7 +149,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.DIG_SPEED, 600, 1, false, false));
   }
 
-  public static SodaCanItem YELLOW_SODA(Item.Properties properties) {
+  public static SodaCanItem getYellowSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_0,
@@ -157,7 +157,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.LUCK, 600, 1, false, false));
   }
 
-  public static SodaCanItem VITA_AQUA_SODA(Item.Properties properties) {
+  public static SodaCanItem getVitaAquaSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -165,7 +165,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.WATER_BREATHING, 2400, 1, false, false));
   }
 
-  public static SodaCanItem SPEEDY_SODA(Item.Properties properties) {
+  public static SodaCanItem getSpeedySodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -173,7 +173,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2400, 1, false, false));
   }
 
-  public static SodaCanItem SODA_LIGHT_SODA(Item.Properties properties) {
+  public static SodaCanItem getSodaLightSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -182,7 +182,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.LEVITATION, 1200, 1, false, false));
   }
 
-  public static SodaCanItem CATERPILLAR_SODA(Item.Properties properties) {
+  public static SodaCanItem getCaterpillarSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -190,7 +190,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.HUNGER, 2400, 1, false, false));
   }
 
-  public static SodaCanItem HASTY_ALE_SODA(Item.Properties properties) {
+  public static SodaCanItem getHastyAleSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -199,7 +199,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 1, false, false));
   }
 
-  public static SodaCanItem WITHER_ALE_SODA(Item.Properties properties) {
+  public static SodaCanItem getWitherAleSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -207,7 +207,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.WITHER, 1200, 1, false, false));
   }
 
-  public static SodaCanItem CATS_COKE_SODA(Item.Properties properties) {
+  public static SodaCanItem getCatsCokeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -216,7 +216,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.SLOW_FALLING, 1200, 1, false, false));
   }
 
-  public static SodaCanItem FIERY_CITRON_JUICE_SODA(Item.Properties properties) {
+  public static SodaCanItem getFieryCitronJuiceSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -224,7 +224,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 1, false, false));
   }
 
-  public static SodaCanItem POSEIDONS_TONIC_WATER_SODA(Item.Properties properties) {
+  public static SodaCanItem getPoseidonsTonicWaterSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -232,7 +232,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.WATER_BREATHING, 2400, 1, false, false));
   }
 
-  public static SodaCanItem HADES_LEMONADE_SODA(Item.Properties properties) {
+  public static SodaCanItem getHadesLemonadeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -246,7 +246,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.SATURATION, 36000, 1, false, false));
   }
 
-  public static SodaCanItem GUARDIANS_CAROL_JUICE_SODA(Item.Properties properties) {
+  public static SodaCanItem getGuardiansCoralJuiceSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_1,
@@ -254,7 +254,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.CONDUIT_POWER, 2400, 1, false, false));
   }
 
-  public static SodaCanItem WITCHES_ROOT_BEER_SODA(Item.Properties properties) {
+  public static SodaCanItem getWitchesRootBeerSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_2,
@@ -263,7 +263,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.REGENERATION, 1200, 1, false, false));
   }
 
-  public static SodaCanItem ARONS_GRAPE_JUICE_SODA(Item.Properties properties) {
+  public static SodaCanItem getAronsGrapeJuiceSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_2,
@@ -271,7 +271,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 2400, 1, false, false));
   }
 
-  public static SodaCanItem KAWORRUS_FAVOURITE_COKE_SODA(Item.Properties properties) {
+  public static SodaCanItem getKaworrusFavouriteCokeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_2,
@@ -280,7 +280,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.HEALTH_BOOST, 2400, 2, false, false));
   }
 
-  public static SodaCanItem VILLAGERS_ALE_SODA(Item.Properties properties) {
+  public static SodaCanItem getVillagersAleSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_2,
@@ -289,7 +289,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 2400, 1, false, false));
   }
 
-  public static SodaCanItem ILLAGERS_COKE_SODA(Item.Properties properties) {
+  public static SodaCanItem getIllagersCokeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_2,
@@ -298,7 +298,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.BAD_OMEN, 2400, 1, false, false));
   }
 
-  public static SodaCanItem PLUTONIUM_LEMONADE_SODA(Item.Properties properties) {
+  public static SodaCanItem getPlutoniumLemonadeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_2,
@@ -307,7 +307,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.POISON, 24000, 2, false, false));
   }
 
-  public static SodaCanItem WANDERS_ALE_SODA(Item.Properties properties) {
+  public static SodaCanItem getWandersAleSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_3,
@@ -317,7 +317,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.INVISIBILITY, 3600, 1, false, false));
   }
 
-  public static SodaCanItem MINERS_JUICE_SODA(Item.Properties properties) {
+  public static SodaCanItem getMinersJuiceSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_3,
@@ -327,7 +327,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.LUCK, 3600, 1, false, false));
   }
 
-  public static SodaCanItem WARRIORS_LEMONADE_SODA(Item.Properties properties) {
+  public static SodaCanItem getWarriorsLemonadeSodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_3,
@@ -337,7 +337,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.ABSORPTION, 3600, 1, false, false));
   }
 
-  public static SodaCanItem HOLY_SODA(Item.Properties properties) {
+  public static SodaCanItem getHolySodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_4,
@@ -361,7 +361,7 @@ public class SodaCanItems {
         new MobEffectInstance(MobEffects.WATER_BREATHING, 3600, 1, false, false));
   }
 
-  public static SodaCanItem UNHOLY_SODA(Item.Properties properties) {
+  public static SodaCanItem getUnholySodaCanItem(Item.Properties properties) {
     return new SodaCanItem(
         properties.stacksTo(6),
         SodaCanTier.TIER_4,

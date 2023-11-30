@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "trank_o_mat:soda_deposit_machine_01",
     "trank_o_mat:soda_vending_machine_01",
     "trank_o_mat:soda_vending_machine_02"
   ]

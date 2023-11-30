@@ -4,7 +4,7 @@
   "textures": {
     "particle": "trank_o_mat:block/soda_vending_machine/soda_vending_machine_01",
     "texture": "trank_o_mat:block/soda_vending_machine/soda_vending_machine_01",
-    "logo": "trank_o_mat:block/soda_vending_machine/trank_o_mat"
+    "logo": "trank_o_mat:block/trank_o_mat"
   },
   "elements": [
     {

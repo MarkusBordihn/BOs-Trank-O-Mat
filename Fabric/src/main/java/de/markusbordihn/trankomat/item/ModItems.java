@@ -20,7 +20,6 @@
 package de.markusbordihn.trankomat.item;
 
 import de.markusbordihn.trankomat.Constants;
-import de.markusbordihn.trankomat.block.SodaVendingMachineBlocks;
 import de.markusbordihn.trankomat.blocks.ModBlocks;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.BlockItem;
@@ -28,92 +27,104 @@ import net.minecraft.world.item.Item;
 
 public class ModItems {
 
-  public static final Item BLACK_SODA = SodaCanItems.BLACK_SODA(new Item.Properties());
-  public static final Item BLUE_SODA = SodaCanItems.BLUE_SODA(new Item.Properties());
-  public static final Item BROWN_SODA = SodaCanItems.BROWN_SODA(new Item.Properties());
-  public static final Item CYAN_SODA = SodaCanItems.CYAN_SODA(new Item.Properties());
-  public static final Item GRAY_SODA = SodaCanItems.GRAY_SODA(new Item.Properties());
-  public static final Item GREEN_SODA = SodaCanItems.GREEN_SODA(new Item.Properties());
-  public static final Item LIGHT_BLUE_SODA = SodaCanItems.LIGHT_BLUE_SODA(new Item.Properties());
-  public static final Item LIGHT_GRAY_SODA = SodaCanItems.LIGHT_GRAY_SODA(new Item.Properties());
-  public static final Item LIME_SODA = SodaCanItems.LIME_SODA(new Item.Properties());
-  public static final Item MAGENTA_SODA = SodaCanItems.MAGENTA_SODA(new Item.Properties());
-  public static final Item ORANGE_SODA = SodaCanItems.ORANGE_SODA(new Item.Properties());
-  public static final Item PINK_SODA = SodaCanItems.PINK_SODA(new Item.Properties());
-  public static final Item PURPLE_SODA = SodaCanItems.PURPLE_SODA(new Item.Properties());
-  public static final Item RED_SODA = SodaCanItems.RED_SODA(new Item.Properties());
-  public static final Item WHITE_SODA = SodaCanItems.WHITE_SODA(new Item.Properties());
-  public static final Item YELLOW_SODA = SodaCanItems.YELLOW_SODA(new Item.Properties());
+  public static final Item BLACK_SODA = SodaCanItems.getBlackSodaCanItem(new Item.Properties());
+  public static final Item BLUE_SODA = SodaCanItems.getBlueSodaCanItem(new Item.Properties());
+  public static final Item BROWN_SODA = SodaCanItems.getBrownSodaCanItem(new Item.Properties());
+  public static final Item CYAN_SODA = SodaCanItems.getCyanSodaCanItem(new Item.Properties());
+  public static final Item GRAY_SODA = SodaCanItems.getGraySodaCanItem(new Item.Properties());
+  public static final Item GREEN_SODA = SodaCanItems.getGreenSodaCanItem(new Item.Properties());
+  public static final Item LIGHT_BLUE_SODA =
+      SodaCanItems.getLightBlueSodaCanItem(new Item.Properties());
+  public static final Item LIGHT_GRAY_SODA =
+      SodaCanItems.getLightGraySodaCanItem(new Item.Properties());
+  public static final Item LIME_SODA = SodaCanItems.getLimeSodaCanItem(new Item.Properties());
+  public static final Item MAGENTA_SODA = SodaCanItems.getMagentaSodaCanItem(new Item.Properties());
+  public static final Item ORANGE_SODA = SodaCanItems.getOrangeSodaCanItem(new Item.Properties());
+  public static final Item PINK_SODA = SodaCanItems.getPinkSodaCanItem(new Item.Properties());
+  public static final Item PURPLE_SODA = SodaCanItems.getPurpleSodaCanItem(new Item.Properties());
+  public static final Item RED_SODA = SodaCanItems.getRedSodaCanItem(new Item.Properties());
+  public static final Item WHITE_SODA = SodaCanItems.getWhiteSodaCanItem(new Item.Properties());
+  public static final Item YELLOW_SODA = SodaCanItems.getYellowSodaCanItem(new Item.Properties());
 
-  public static final Item VITA_AQUA_SODA = SodaCanItems.VITA_AQUA_SODA(new Item.Properties());
-  public static final Item SPEEDY_SODA = SodaCanItems.SPEEDY_SODA(new Item.Properties());
-  public static final Item SODA_LIGHT_SODA = SodaCanItems.SODA_LIGHT_SODA(new Item.Properties());
-  public static final Item CATERPILLAR_SODA = SodaCanItems.CATERPILLAR_SODA(new Item.Properties());
-  public static final Item HASTY_ALE_SODA = SodaCanItems.HASTY_ALE_SODA(new Item.Properties());
-  public static final Item WITHER_ALE_SODA = SodaCanItems.WITHER_ALE_SODA(new Item.Properties());
-  public static final Item CATS_COKE_SODA = SodaCanItems.CATS_COKE_SODA(new Item.Properties());
+  public static final Item VITA_AQUA_SODA =
+      SodaCanItems.getVitaAquaSodaCanItem(new Item.Properties());
+  public static final Item SPEEDY_SODA = SodaCanItems.getSpeedySodaCanItem(new Item.Properties());
+  public static final Item SODA_LIGHT_SODA =
+      SodaCanItems.getSodaLightSodaCanItem(new Item.Properties());
+  public static final Item CATERPILLAR_SODA =
+      SodaCanItems.getCaterpillarSodaCanItem(new Item.Properties());
+  public static final Item HASTY_ALE_SODA =
+      SodaCanItems.getHastyAleSodaCanItem(new Item.Properties());
+  public static final Item WITHER_ALE_SODA =
+      SodaCanItems.getWitherAleSodaCanItem(new Item.Properties());
+  public static final Item CATS_COKE_SODA =
+      SodaCanItems.getCatsCokeSodaCanItem(new Item.Properties());
   public static final Item FIERY_CITRON_JUICE_SODA =
-      SodaCanItems.FIERY_CITRON_JUICE_SODA(new Item.Properties());
+      SodaCanItems.getFieryCitronJuiceSodaCanItem(new Item.Properties());
   public static final Item POSEIDONS_TONIC_WATER_SODA =
-      SodaCanItems.POSEIDONS_TONIC_WATER_SODA(new Item.Properties());
+      SodaCanItems.getPoseidonsTonicWaterSodaCanItem(new Item.Properties());
   public static final Item HADES_LEMONADE_SODA =
-      SodaCanItems.HADES_LEMONADE_SODA(new Item.Properties());
-  public static final Item GUARDIANS_CAROL_JUICE_SODA =
-      SodaCanItems.GUARDIANS_CAROL_JUICE_SODA(new Item.Properties());
+      SodaCanItems.getHadesLemonadeSodaCanItem(new Item.Properties());
+  public static final Item GUARDIANS_CORAL_JUICE_SODA =
+      SodaCanItems.getGuardiansCoralJuiceSodaCanItem(new Item.Properties());
   public static final Item WITCHES_ROOT_BEER_SODA =
-      SodaCanItems.WITCHES_ROOT_BEER_SODA(new Item.Properties());
+      SodaCanItems.getWitchesRootBeerSodaCanItem(new Item.Properties());
   public static final Item ARONS_GRAPE_JUICE_SODA =
-      SodaCanItems.ARONS_GRAPE_JUICE_SODA(new Item.Properties());
+      SodaCanItems.getAronsGrapeJuiceSodaCanItem(new Item.Properties());
   public static final Item KAWORRUS_FAVOURITE_COKE_SODA =
-      SodaCanItems.KAWORRUS_FAVOURITE_COKE_SODA(new Item.Properties());
+      SodaCanItems.getKaworrusFavouriteCokeSodaCanItem(new Item.Properties());
   public static final Item VILLAGERS_ALE_SODA =
-      SodaCanItems.VILLAGERS_ALE_SODA(new Item.Properties());
+      SodaCanItems.getVillagersAleSodaCanItem(new Item.Properties());
   public static final Item ILLAGERS_COKE_SODA =
-      SodaCanItems.ILLAGERS_COKE_SODA(new Item.Properties());
+      SodaCanItems.getIllagersCokeSodaCanItem(new Item.Properties());
   public static final Item PLUTONIUM_LEMONADE_SODA =
-      SodaCanItems.PLUTONIUM_LEMONADE_SODA(new Item.Properties());
-  public static final Item WANDERS_ALE_SODA = SodaCanItems.WANDERS_ALE_SODA(new Item.Properties());
+      SodaCanItems.getPlutoniumLemonadeSodaCanItem(new Item.Properties());
+  public static final Item WANDERS_ALE_SODA =
+      SodaCanItems.getWandersAleSodaCanItem(new Item.Properties());
   public static final Item MINERS_JUICE_SODA =
-      SodaCanItems.MINERS_JUICE_SODA(new Item.Properties());
+      SodaCanItems.getMinersJuiceSodaCanItem(new Item.Properties());
   public static final Item WARRIORS_LEMONADE_SODA =
-      SodaCanItems.WARRIORS_LEMONADE_SODA(new Item.Properties());
-  public static final Item HOLY_SODA = SodaCanItems.HOLY_SODA(new Item.Properties());
-  public static final Item UNHOLY_SODA = SodaCanItems.UNHOLY_SODA(new Item.Properties());
+      SodaCanItems.getWarriorsLemonadeSodaCanItem(new Item.Properties());
+  public static final Item HOLY_SODA = SodaCanItems.getHolySodaCanItem(new Item.Properties());
+  public static final Item UNHOLY_SODA = SodaCanItems.getUnholySodaCanItem(new Item.Properties());
 
-  public static final Item SODA_CAN_EMPTY = EmptySodaCanItems.EMPTY_SODA_CAN(new Item.Properties());
+  public static final Item SODA_CAN_EMPTY =
+      EmptySodaCanItems.getEmptySodaCanItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_BLACK =
-      EmptySodaCanItems.EMPTY_SODA_CAN_BLACK(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanBlackItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_BLUE =
-      EmptySodaCanItems.EMPTY_SODA_CAN_BLUE(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanBlueItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_BROWN =
-      EmptySodaCanItems.EMPTY_SODA_CAN_BROWN(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanBrownItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_CYAN =
-      EmptySodaCanItems.EMPTY_SODA_CAN_CYAN(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanCyanItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_GRAY =
-      EmptySodaCanItems.EMPTY_SODA_CAN_GRAY(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanGrayItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_GREEN =
-      EmptySodaCanItems.EMPTY_SODA_CAN_GREEN(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanGreenItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_LIGHT_BLUE =
-      EmptySodaCanItems.EMPTY_SODA_CAN_LIGHT_BLUE(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanLightBlueItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_LIGHT_GRAY =
-      EmptySodaCanItems.EMPTY_SODA_CAN_LIGHT_GRAY(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanLightGrayItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_LIME =
-      EmptySodaCanItems.EMPTY_SODA_CAN_LIME(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanLimeItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_MAGENTA =
-      EmptySodaCanItems.EMPTY_SODA_CAN_MAGENTA(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanMagentaItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_ORANGE =
-      EmptySodaCanItems.EMPTY_SODA_CAN_ORANGE(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanOrangeItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_PINK =
-      EmptySodaCanItems.EMPTY_SODA_CAN_PINK(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanPinkItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_PURPLE =
-      EmptySodaCanItems.EMPTY_SODA_CAN_PURPLE(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanPurpleItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_RED =
-      EmptySodaCanItems.EMPTY_SODA_CAN_RED(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanRedItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_WHITE =
-      EmptySodaCanItems.EMPTY_SODA_CAN_WHITE(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanWhiteItem(new Item.Properties());
   public static final Item SODA_CAN_EMPTY_YELLOW =
-      EmptySodaCanItems.EMPTY_SODA_CAN_YELLOW(new Item.Properties());
+      EmptySodaCanItems.getEmptySodaCanYellowItem(new Item.Properties());
 
+  public static final BlockItem SODA_DEPOSIT_MACHINE_01 =
+      new BlockItem(ModBlocks.SODA_DEPOSIT_MACHINE_01, new Item.Properties());
   public static final BlockItem VENDING_MACHINE =
       new BlockItem(ModBlocks.VENDING_MACHINE, new Item.Properties());
   public static final BlockItem SODA_VENDING_MACHINE_01 =
@@ -161,8 +172,8 @@ public class ModItems {
         Registry.ITEM, Constants.MOD_ID_PREFIX + "hades_lemonade", HADES_LEMONADE_SODA);
     Registry.register(
         Registry.ITEM,
-        Constants.MOD_ID_PREFIX + "guardians_carol_juice",
-        GUARDIANS_CAROL_JUICE_SODA);
+        Constants.MOD_ID_PREFIX + "guardians_coral_juice",
+        GUARDIANS_CORAL_JUICE_SODA);
     Registry.register(
         Registry.ITEM, Constants.MOD_ID_PREFIX + "witches_root_beer", WITCHES_ROOT_BEER_SODA);
     Registry.register(
@@ -223,6 +234,10 @@ public class ModItems {
         Registry.ITEM, Constants.MOD_ID_PREFIX + "soda_can_empty_yellow", SODA_CAN_EMPTY_YELLOW);
 
     Constants.LOG.info("{} Block Items ...", Constants.LOG_REGISTER_PREFIX);
+    Registry.register(
+        Registry.ITEM,
+        Constants.MOD_ID_PREFIX + "soda_deposit_machine_01",
+        SODA_DEPOSIT_MACHINE_01);
     Registry.register(Registry.ITEM, Constants.MOD_ID_PREFIX + "vending_machine", VENDING_MACHINE);
     Registry.register(
         Registry.ITEM,

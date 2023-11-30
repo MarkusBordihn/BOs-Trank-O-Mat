@@ -19,11 +19,32 @@
 
 package de.markusbordihn.trankomat.item;
 
+import de.markusbordihn.trankomat.Constants;
+import java.util.List;
+import javax.annotation.Nullable;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 
 public class EmptySodaCanItem extends Item {
 
   public EmptySodaCanItem(Item.Properties properties) {
     super(properties);
+  }
+
+  @Override
+  public void appendHoverText(
+      ItemStack itemStack,
+      @Nullable Level level,
+      List<Component> componentList,
+      TooltipFlag tooltipFlag) {
+    super.appendHoverText(itemStack, level, componentList, tooltipFlag);
+
+    componentList.add(
+        new TranslatableComponent(Constants.ITEM_PREFIX + "soda_can_empty.description")
+            .withStyle(net.minecraft.ChatFormatting.GRAY));
   }
 }

@@ -30,6 +30,11 @@ public class ModSoundEvents {
 
   public static final DeferredRegister<SoundEvent> SOUNDS =
       DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Constants.MOD_ID);
+
+  public static final RegistryObject<SoundEvent> SODA_CAN_CRASH =
+      SOUNDS.register(
+          "crash_soda_can",
+          () -> new SoundEvent(new ResourceLocation(Constants.MOD_ID, "crash_soda_can")));
   public static final RegistryObject<SoundEvent> SODA_CAN_OPEN =
       SOUNDS.register(
           "open_soda_can",

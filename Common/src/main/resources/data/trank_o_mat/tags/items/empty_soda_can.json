@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "trank_o_mat:soda_can_empty",
+    "trank_o_mat:soda_can_empty_black",
+    "trank_o_mat:soda_can_empty_blue",
+    "trank_o_mat:soda_can_empty_brown",
+    "trank_o_mat:soda_can_empty_cyan",
+    "trank_o_mat:soda_can_empty_gray",
+    "trank_o_mat:soda_can_empty_green",
+    "trank_o_mat:soda_can_empty_light_blue",
+    "trank_o_mat:soda_can_empty_light_gray",
+    "trank_o_mat:soda_can_empty_lime",
+    "trank_o_mat:soda_can_empty_magenta",
+    "trank_o_mat:soda_can_empty_orange",
+    "trank_o_mat:soda_can_empty_pink",
+    "trank_o_mat:soda_can_empty_purple",
+    "trank_o_mat:soda_can_empty_red",
+    "trank_o_mat:soda_can_empty_white",
+    "trank_o_mat:soda_can_empty_yellow"
+  ]
+}

@@ -19,32 +19,34 @@
 
 package de.markusbordihn.trankomat;
 
+import de.markusbordihn.trankomat.block.SodaDepositMachineBlocks;
 import de.markusbordihn.trankomat.block.SodaVendingMachineBlocks;
 import de.markusbordihn.trankomat.blocks.ModBlocks;
 import de.markusbordihn.trankomat.item.ModItems;
+import de.markusbordihn.trankomat.sounds.ModSoundEvents;
 import de.markusbordihn.trankomat.tabs.ModTabs;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
 
 public class TrankOMat implements ModInitializer {
 
   @Override
   public void onInitialize() {
     // Use Fabric to bootstrap the Common mod.
-    Constants.LOG.info("Hello Fabric world!");
+    Constants.LOG.info("Initializing {} (Fabric) ...", Constants.MOD_NAME);
     CommonClass.init();
-
-    String prefix = Constants.MOD_ID_PREFIX;
 
     Constants.LOG.info("{} Blocks ...", Constants.LOG_REGISTER_PREFIX);
     ModBlocks.registerModBlocks();
 
     Constants.LOG.info("{} Register Block Layers ...", Constants.LOG_REGISTER_PREFIX);
+    BlockRenderLayerMap.INSTANCE.putBlock(
+        SodaDepositMachineBlocks.DEPOSIT_MACHINE_TOP, RenderType.translucent());
+    BlockRenderLayerMap.INSTANCE.putBlock(
+        SodaDepositMachineBlocks.SODA_DEPOSIT_MACHINE_01, RenderType.cutoutMipped());
+
     BlockRenderLayerMap.INSTANCE.putBlock(
         SodaVendingMachineBlocks.VENDING_MACHINE_TOP, RenderType.translucent());
     BlockRenderLayerMap.INSTANCE.putBlock(
@@ -59,14 +61,7 @@ public class TrankOMat implements ModInitializer {
     ModTabs.registerModTabs();
 
     Constants.LOG.info("{} Sound Events ...", Constants.LOG_REGISTER_PREFIX);
-    Registry.register(
-        Registry.SOUND_EVENT,
-        prefix + "open_soda_can",
-        new SoundEvent(new ResourceLocation(prefix + "open_soda_can")));
-    Registry.register(
-        Registry.SOUND_EVENT,
-        prefix + "drop_soda_can",
-        new SoundEvent(new ResourceLocation(prefix + "drop_soda_can")));
+    ModSoundEvents.registerModSoundEvents();
 
     // Some code like events require special initialization from the
     // loader specific code.

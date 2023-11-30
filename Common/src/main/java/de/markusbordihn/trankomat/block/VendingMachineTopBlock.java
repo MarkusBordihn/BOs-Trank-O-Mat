@@ -47,6 +47,7 @@ public class VendingMachineTopBlock extends Block {
   private static final VoxelShape SHAPE_EAST = Block.box(0, 0, 0, 8, 16, 16);
   private static final VoxelShape SHAPE_SOUTH = Block.box(0, 0, 0, 16, 16, 8);
   private static final VoxelShape SHAPE_WEST = Block.box(8, 0, 0, 16, 16, 16);
+  private static final int LIGHT_LEVEL = 7;
 
   public VendingMachineTopBlock(BlockBehaviour.Properties properties) {
     super(properties);
@@ -58,7 +59,7 @@ public class VendingMachineTopBlock extends Block {
   }
 
   public static int getLightLevel(BlockState blockState) {
-    return 7;
+    return LIGHT_LEVEL;
   }
 
   @Override
@@ -69,16 +70,12 @@ public class VendingMachineTopBlock extends Block {
   @Override
   public VoxelShape getShape(
       BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext context) {
-    switch (blockState.getValue(VendingMachineBlock.FACING)) {
-      case EAST:
-        return SHAPE_EAST;
-      case SOUTH:
-        return SHAPE_SOUTH;
-      case WEST:
-        return SHAPE_WEST;
-      default:
-        return SHAPE_NORTH;
-    }
+    return switch (blockState.getValue(VendingMachineBlock.FACING)) {
+      case EAST -> SHAPE_EAST;
+      case SOUTH -> SHAPE_SOUTH;
+      case WEST -> SHAPE_WEST;
+      default -> SHAPE_NORTH;
+    };
   }
 
   @Override

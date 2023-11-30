@@ -222,6 +222,12 @@ public class SodaCanItem extends Item {
                     Constants.TEXT_PREFIX + "soda_can_tier", getTier().getTierLevel())
                 .withStyle(ChatFormatting.RED));
         break;
+      case TIER_4:
+        componentList.add(
+            new TranslatableComponent(
+                    Constants.TEXT_PREFIX + "soda_can_tier", getTier().getTierLevel())
+                .withStyle(ChatFormatting.DARK_PURPLE));
+        break;
       default:
         break;
     }

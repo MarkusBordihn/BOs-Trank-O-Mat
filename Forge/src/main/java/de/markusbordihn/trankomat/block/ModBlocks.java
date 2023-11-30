@@ -21,7 +21,6 @@ package de.markusbordihn.trankomat.block;
 
 import de.markusbordihn.trankomat.Constants;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -30,8 +29,14 @@ public class ModBlocks {
 
   public static final DeferredRegister<Block> BLOCKS =
       DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
-  public static final DeferredRegister<BlockEntityType<?>> ENTITIES =
-      DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Constants.MOD_ID);
+
+  public static final RegistryObject<Block> DEPOSIT_MACHINE_TOP =
+      BLOCKS.register("deposit_machine_top", () -> SodaDepositMachineBlocks.DEPOSIT_MACHINE_TOP);
+
+  public static final RegistryObject<Block> SODA_DEPOSIT_MACHINE_01 =
+      BLOCKS.register(
+          "soda_deposit_machine_01", () -> SodaDepositMachineBlocks.SODA_DEPOSIT_MACHINE_01);
+
   public static final RegistryObject<Block> VENDING_MACHINE =
       BLOCKS.register("vending_machine", () -> SodaVendingMachineBlocks.VENDING_MACHINE);
   public static final RegistryObject<Block> VENDING_MACHINE_TOP =

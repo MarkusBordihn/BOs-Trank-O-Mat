@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R#R",
+    "|O|",
+    "|U|"
+  ],
+  "key": {
+    "#": {"item": "minecraft:glass_pane"},
+    "R": {"item": "minecraft:redstone"},
+    "U": {"item": "minecraft:bucket"},
+    "|": {"item": "minecraft:iron_bars"},
+    "O": {"tag": "trank_o_mat:empty_soda_can"}
+  },
+  "result": {"item": "trank_o_mat:soda_deposit_machine_01"}
+}

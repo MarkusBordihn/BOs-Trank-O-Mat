@@ -38,7 +38,7 @@ public class TrankOMat {
     final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
     // Use Forge to bootstrap the Common mod.
-    Constants.LOG.info("Hello Forge world!");
+    Constants.LOG.info("Initializing {} (Forge) ...", Constants.MOD_NAME);
     CommonClass.init();
 
     Constants.LOG.info("{} Blocks ...", Constants.LOG_REGISTER_PREFIX);

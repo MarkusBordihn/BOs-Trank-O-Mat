@@ -118,7 +118,8 @@ curseforge {
   apiKey = "${credentials.curseforge_api_token}"
   project {
     id = "${curseforge_project_id}"
-    changelog = ""
+    changelog = file("../CHANGELOG.md")
+    changelogType = 'markdown'
     releaseType = 'release'
     addGameVersion("1.18.2")
     addGameVersion("Forge")

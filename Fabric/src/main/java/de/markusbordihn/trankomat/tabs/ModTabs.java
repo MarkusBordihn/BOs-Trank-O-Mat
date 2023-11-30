@@ -35,6 +35,7 @@ public class ModTabs {
         .icon(() -> ModBlocks.SODA_VENDING_MACHINE_01.asItem().getDefaultInstance())
         .appendItems(
             stack -> {
+              stack.add(ModItems.SODA_DEPOSIT_MACHINE_01.asItem().getDefaultInstance());
               stack.add(ModItems.SODA_VENDING_MACHINE_01.asItem().getDefaultInstance());
               stack.add(ModItems.SODA_VENDING_MACHINE_02.asItem().getDefaultInstance());
             })
@@ -72,7 +73,7 @@ public class ModTabs {
               stack.add(ModItems.FIERY_CITRON_JUICE_SODA.asItem().getDefaultInstance());
               stack.add(ModItems.POSEIDONS_TONIC_WATER_SODA.asItem().getDefaultInstance());
               stack.add(ModItems.HADES_LEMONADE_SODA.asItem().getDefaultInstance());
-              stack.add(ModItems.GUARDIANS_CAROL_JUICE_SODA.asItem().getDefaultInstance());
+              stack.add(ModItems.GUARDIANS_CORAL_JUICE_SODA.asItem().getDefaultInstance());
               stack.add(ModItems.WITCHES_ROOT_BEER_SODA.asItem().getDefaultInstance());
               stack.add(ModItems.ARONS_GRAPE_JUICE_SODA.asItem().getDefaultInstance());
               stack.add(ModItems.KAWORRUS_FAVOURITE_COKE_SODA.asItem().getDefaultInstance());

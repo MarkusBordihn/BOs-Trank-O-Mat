@@ -21,7 +21,6 @@ package de.markusbordihn.trankomat.data;
 
 import de.markusbordihn.trankomat.Constants;
 import de.markusbordihn.trankomat.block.VendingMachineBlock;
-import de.markusbordihn.trankomat.item.EmptySodaCanItem;
 import de.markusbordihn.trankomat.item.SodaCanItem;
 import java.time.Instant;
 import java.util.HashMap;
@@ -31,9 +30,6 @@ import java.util.Random;
 import java.util.Set;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
@@ -52,7 +48,6 @@ public class VendingMachineOffers {
   private static final HashSet<SodaCanItem> itemsTier2 = new HashSet<>();
   private static final HashSet<SodaCanItem> itemsTier3 = new HashSet<>();
   private static final HashSet<SodaCanItem> itemsTier4 = new HashSet<>();
-  private static final HashSet<EmptySodaCanItem> emptySodaCans = new HashSet<>();
   private static final Random random = new Random();
   private static boolean itemsInitialized = false;
 
@@ -128,19 +123,6 @@ public class VendingMachineOffers {
               }
             });
 
-    // Get all registered empty soda can items.
-    for (DyeColor dyeColor : DyeColor.values()) {
-      Item emptySodaCanRegistryItem =
-          Registry.ITEM
-              .getOptional(
-                  new ResourceLocation(
-                      Constants.MOD_ID, "soda_can_empty_" + dyeColor.getName().toLowerCase()))
-              .orElse(null);
-      if (emptySodaCanRegistryItem instanceof EmptySodaCanItem emptySodaCanItem) {
-        emptySodaCans.add(emptySodaCanItem);
-      }
-    }
-
     itemsInitialized = true;
   }
 
@@ -171,39 +153,11 @@ public class VendingMachineOffers {
       merchantOffers.addAll(getRandomOffers(itemsTier4, 1));
     }
 
-    // Add empty soda can, for each color.
-    merchantOffers.addAll(getRandomEmptySodaCans(6));
-
     // Update trading offers and reset refill and refresh date.
     refileUpdateMap.put(blockPos, Instant.now());
     refreshUpdateMap.put(blockPos, Instant.now());
     needsUpdateMap.put(blockPos, true);
     vendingMachineOffersMap.put(blockPos, merchantOffers);
-    return merchantOffers;
-  }
-
-  private static Set<MerchantOffer> getRandomEmptySodaCans(int maxItems) {
-    Set<MerchantOffer> merchantOffers = new HashSet<>();
-    Set<EmptySodaCanItem> ignoredItems = new HashSet<>();
-    for (int i = 0; i < maxItems; i++) {
-      EmptySodaCanItem emptySodaCanItem =
-          emptySodaCans.stream()
-              .skip(random.nextInt(emptySodaCans.size()))
-              .findFirst()
-              .orElse(null);
-      if (emptySodaCanItem == null || ignoredItems.contains(emptySodaCanItem)) {
-        continue;
-      }
-      merchantOffers.add(
-          new MerchantOffer(
-              ItemStack.EMPTY,
-              new ItemStack(emptySodaCanItem),
-              new ItemStack(Items.IRON_NUGGET, 1 + random.nextInt(3)),
-              1 + random.nextInt(32),
-              0,
-              1));
-      ignoredItems.add(emptySodaCanItem);
-    }
     return merchantOffers;
   }
 

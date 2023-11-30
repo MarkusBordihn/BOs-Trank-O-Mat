@@ -19,6 +19,7 @@ dependencies {
 
   // Additional helpful Mods for development
   modImplementation "curse.maven:jei-238222:4593546"
+  modImplementation "curse.maven:modmenu-308702:4145213"
 }
 
 loom {
@@ -73,9 +74,10 @@ curseforge {
   apiKey = "${credentials.curseforge_api_token}"
   project {
     id = "${curseforge_project_id}"
-    changelog = ""
+    changelog = file("../CHANGELOG.md")
+    changelogType = 'markdown'
     releaseType = 'release'
-    addGameVersion("1.18.2")
+    addGameVersion("${minecraft_version}")
     addGameVersion("Fabric")
     addGameVersion("Quilt")
 

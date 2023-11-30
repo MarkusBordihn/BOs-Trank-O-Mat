@@ -32,8 +32,8 @@ public enum SodaCanTier implements StringRepresentable {
   TIER_4(4, 1, new ItemStack(Items.EMERALD, 10), ItemStack.EMPTY);
   // @formatter:on
 
-  int tierLevel = 0;
-  int maxUses = 16;
+  final int tierLevel;
+  final int maxUses;
   ItemStack costA = ItemStack.EMPTY;
   ItemStack costB = ItemStack.EMPTY;
 
