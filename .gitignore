@@ -21,6 +21,9 @@ run
 .gradle
 *local.properties
 
+# NeoForge
+NeoForge/runs
+
 # NodeJs
 node_modules
 npm-debug.log
