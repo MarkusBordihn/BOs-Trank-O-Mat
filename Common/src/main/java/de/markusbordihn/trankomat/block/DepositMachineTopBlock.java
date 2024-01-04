@@ -84,16 +84,17 @@ public class DepositMachineTopBlock extends Block {
   }
 
   @Override
-  public void playerWillDestroy(
+  public BlockState playerWillDestroy(
       Level level, BlockPos blockPos, BlockState blockState, Player player) {
     Constants.LOG.info("Player {} destroyed {}.", player.getName().getString(), blockState);
-    super.playerWillDestroy(level, blockPos, blockState, player);
+    blockState = super.playerWillDestroy(level, blockPos, blockState, player);
     BlockPos blockPosBelow = blockPos.below();
     BlockState blockStateBelow = level.getBlockState(blockPosBelow);
     if (blockStateBelow.getBlock() instanceof DepositMachineBlock) {
       level.setBlockAndUpdate(blockPosBelow, Blocks.AIR.defaultBlockState());
       level.levelEvent(player, 2001, blockPosBelow, Block.getId(blockStateBelow));
     }
+    return blockState;
   }
 
   @Override

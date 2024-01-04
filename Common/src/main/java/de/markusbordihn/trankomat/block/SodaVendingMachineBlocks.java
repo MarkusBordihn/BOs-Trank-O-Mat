@@ -19,26 +19,49 @@
 
 package de.markusbordihn.trankomat.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 public class SodaVendingMachineBlocks {
 
   public static final VendingMachineBlock VENDING_MACHINE =
       new VendingMachineBlock(
-          BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK)
+          Properties.of()
+              .mapColor(MapColor.METAL)
+              .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+              .requiresCorrectToolForDrops()
+              .strength(5.0F, 6.0F)
+              .sound(SoundType.METAL)
               .lightLevel(VendingMachineBlock::getLightLevel));
   public static final VendingMachineTopBlock VENDING_MACHINE_TOP =
       new VendingMachineTopBlock(
-          BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK)
+          Properties.of()
+              .mapColor(MapColor.METAL)
+              .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+              .requiresCorrectToolForDrops()
+              .strength(5.0F, 6.0F)
+              .sound(SoundType.METAL)
               .lightLevel(VendingMachineBlock::getLightLevel));
 
   public static final VendingMachineBlock SODA_VENDING_MACHINE_01 =
       new VendingMachineBlock(
-          BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK)
+          Properties.of()
+              .mapColor(MapColor.METAL)
+              .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+              .requiresCorrectToolForDrops()
+              .strength(5.0F, 6.0F)
+              .sound(SoundType.METAL)
               .lightLevel(VendingMachineBlock::getLightLevel));
   public static final VendingMachineBlock SODA_VENDING_MACHINE_02 =
       new VendingMachineBlock(
-          BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK)
+          Properties.of()
+              .mapColor(MapColor.METAL)
+              .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+              .requiresCorrectToolForDrops()
+              .strength(5.0F, 6.0F)
+              .sound(SoundType.METAL)
               .lightLevel(VendingMachineBlock::getLightLevel));
 
   protected SodaVendingMachineBlocks() {}

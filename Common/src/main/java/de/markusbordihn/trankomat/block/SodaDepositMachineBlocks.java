@@ -19,17 +19,30 @@
 
 package de.markusbordihn.trankomat.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 public class SodaDepositMachineBlocks {
 
   public static final DepositMachineTopBlock DEPOSIT_MACHINE_TOP =
       new DepositMachineTopBlock(
-          BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK)
+          Properties.of()
+              .mapColor(MapColor.METAL)
+              .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+              .requiresCorrectToolForDrops()
+              .strength(5.0F, 6.0F)
+              .sound(SoundType.METAL)
               .lightLevel(VendingMachineBlock::getLightLevel));
   public static final DepositMachineBlock SODA_DEPOSIT_MACHINE_01 =
       new DepositMachineBlock(
-          BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK)
+          Properties.of()
+              .mapColor(MapColor.METAL)
+              .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+              .requiresCorrectToolForDrops()
+              .strength(5.0F, 6.0F)
+              .sound(SoundType.METAL)
               .lightLevel(VendingMachineBlock::getLightLevel));
 
   protected SodaDepositMachineBlocks() {}
