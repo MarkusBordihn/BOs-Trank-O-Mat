@@ -176,11 +176,11 @@ public class VendingMachineOffers {
       int maxUses = sodaCanTier.getMaxUses();
       if (costB.isEmpty()) {
         if (sodaCanTier.getTierLevel() == 2) {
-          costB = new ItemStack(Items.IRON_NUGGET, 1 + random.nextInt(9));
+          costB = new ItemStack(Items.IRON_INGOT, 1 + random.nextInt(9));
         } else if (sodaCanTier.getTierLevel() == 3) {
-          costB = new ItemStack(Items.GOLD_NUGGET, 1 + random.nextInt(9));
+          costB = new ItemStack(Items.GOLD_INGOT, 1 + random.nextInt(9));
         } else if (sodaCanTier.getTierLevel() == 4) {
-          costB = new ItemStack(Items.GOLD_NUGGET, 1 + random.nextInt(9));
+          costB = new ItemStack(Items.GOLD_INGOT, 1 + random.nextInt(9));
         }
       }
       merchantOffers.add(
