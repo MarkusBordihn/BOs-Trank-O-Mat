@@ -21,9 +21,9 @@ package de.markusbordihn.trankomat;
 
 import de.markusbordihn.trankomat.block.SodaDepositMachineBlocks;
 import de.markusbordihn.trankomat.block.SodaVendingMachineBlocks;
+import de.markusbordihn.trankomat.tabs.ModTabs;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.client.renderer.RenderType;
 
 public class TrankOMatClient implements ClientModInitializer {
@@ -32,9 +32,11 @@ public class TrankOMatClient implements ClientModInitializer {
   public void onInitializeClient() {
     // Use Fabric to bootstrap the Common mod.
     Constants.LOG.info("Initializing {} (Fabric-Client) ...", Constants.MOD_NAME);
-    CommonClass.init();
 
-    Constants.LOG.info("{} Register Block Layers ...", Constants.LOG_REGISTER_PREFIX);
+    Constants.LOG.info("{} Tabs ...", Constants.LOG_REGISTER_PREFIX);
+    ModTabs.registerModTabs();
+
+    Constants.LOG.info("{} Block Layers ...", Constants.LOG_REGISTER_PREFIX);
     BlockRenderLayerMap.INSTANCE.putBlock(
         SodaDepositMachineBlocks.DEPOSIT_MACHINE_TOP, RenderType.translucent());
     BlockRenderLayerMap.INSTANCE.putBlock(
@@ -46,9 +48,5 @@ public class TrankOMatClient implements ClientModInitializer {
         SodaVendingMachineBlocks.SODA_VENDING_MACHINE_01, RenderType.cutoutMipped());
     BlockRenderLayerMap.INSTANCE.putBlock(
         SodaVendingMachineBlocks.SODA_VENDING_MACHINE_02, RenderType.cutoutMipped());
-
-    // Some code like events require special initialization from the
-    // loader specific code.
-    ItemTooltipCallback.EVENT.register(CommonClass::onItemTooltip);
   }
 }

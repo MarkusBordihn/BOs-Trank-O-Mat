@@ -138,7 +138,7 @@ public class DepositMachineOffers {
           new MerchantOffer(
               ItemStack.EMPTY,
               new ItemStack(emptySodaCanItem),
-              new ItemStack(Items.IRON_NUGGET, 2 + random.nextInt(2)),
+              new ItemStack(Items.IRON_NUGGET, 2 + random.nextInt(7)),
               1 + random.nextInt(32),
               0,
               1));
