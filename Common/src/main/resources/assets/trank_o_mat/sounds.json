@@ -8,7 +8,9 @@
   "open_soda_can": {
     "category": "neutral",
     "sounds": [
-      "trank_o_mat:open_soda_can"
+      "trank_o_mat:open_soda_can_01",
+      "trank_o_mat:open_soda_can_02",
+      "trank_o_mat:open_soda_can_03"
     ]
   },
   "drop_soda_can": {

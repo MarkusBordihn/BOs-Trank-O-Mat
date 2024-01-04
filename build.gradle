@@ -7,9 +7,6 @@ subprojects {
   java.withJavadocJar()
 
   jar {
-    from(rootProject.file("LICENSE")) {
-      rename { "${it}_${mod_name}" }
-    }
     manifest {
       attributes([
           'Specification-Title'     : mod_name,
@@ -58,10 +55,13 @@ subprojects {
     it.options.encoding = 'UTF-8'
   }
 
-  // Disables Gradle's custom module metadata from being published to maven. The
-  // metadata includes mapped dependencies which are not reasonably consumable by
-  // other mod developers.
   tasks.withType(GenerateModuleMetadata) {
     enabled = false
   }
+
+  tasks.withType(Javadoc).configureEach {
+    enabled = false
+  }
+
+  tasks.register("prepareKotlinBuildScriptModel") {}
 }
