@@ -85,6 +85,7 @@ dependencies {
 
   // Additional helpful Mods for development
   runtimeOnly fg.deobf("curse.maven:jei-238222:3773518")
+  runtimeOnly fg.deobf("curse.maven:jade-324717:4800837")
 }
 
 tasks.withType(JavaCompile) {
@@ -121,7 +122,7 @@ curseforge {
     changelog = file("../CHANGELOG.md")
     changelogType = 'markdown'
     releaseType = 'release'
-    addGameVersion("1.18.2")
+    addGameVersion("${minecraft_version}")
     addGameVersion("Forge")
   }
   options {
