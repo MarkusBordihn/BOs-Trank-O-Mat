@@ -22,7 +22,6 @@ package de.markusbordihn.trankomat;
 import de.markusbordihn.trankomat.blocks.ModBlocks;
 import de.markusbordihn.trankomat.item.ModItems;
 import de.markusbordihn.trankomat.sounds.ModSoundEvents;
-import de.markusbordihn.trankomat.tabs.ModTabs;
 import net.fabricmc.api.ModInitializer;
 
 public class TrankOMat implements ModInitializer {
@@ -31,16 +30,12 @@ public class TrankOMat implements ModInitializer {
   public void onInitialize() {
     // Use Fabric to bootstrap the Common mod.
     Constants.LOG.info("Initializing {} (Fabric) ...", Constants.MOD_NAME);
-    CommonClass.init();
 
     Constants.LOG.info("{} Blocks ...", Constants.LOG_REGISTER_PREFIX);
     ModBlocks.registerModBlocks();
 
     Constants.LOG.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.registerModItems();
-
-    Constants.LOG.info("{} Item Groups ...", Constants.LOG_REGISTER_PREFIX);
-    ModTabs.registerModTabs();
 
     Constants.LOG.info("{} Sound Events ...", Constants.LOG_REGISTER_PREFIX);
     ModSoundEvents.registerModSoundEvents();
