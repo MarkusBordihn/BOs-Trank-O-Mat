@@ -20,30 +20,30 @@
 package de.markusbordihn.trankomat.sounds;
 
 import de.markusbordihn.trankomat.Constants;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.ForgeRegistries;
-import net.neoforged.neoforge.registries.RegistryObject;
 
 public class ModSoundEvents {
 
   public static final DeferredRegister<SoundEvent> SOUNDS =
-      DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Constants.MOD_ID);
+      DeferredRegister.create(Registries.SOUND_EVENT, Constants.MOD_ID);
 
-  public static final RegistryObject<SoundEvent> SODA_CAN_CRASH =
+  public static final DeferredHolder<SoundEvent, SoundEvent> SODA_CAN_CRASH =
       SOUNDS.register(
           "crash_soda_can",
           () ->
               SoundEvent.createVariableRangeEvent(
                   new ResourceLocation(Constants.MOD_ID, "crash_soda_can")));
-  public static final RegistryObject<SoundEvent> SODA_CAN_OPEN =
+  public static final DeferredHolder<SoundEvent, SoundEvent> SODA_CAN_OPEN =
       SOUNDS.register(
           "open_soda_can",
           () ->
               SoundEvent.createVariableRangeEvent(
                   new ResourceLocation(Constants.MOD_ID, "open_soda_can")));
-  public static final RegistryObject<SoundEvent> DROP_SODA_CAN =
+  public static final DeferredHolder<SoundEvent, SoundEvent> DROP_SODA_CAN =
       SOUNDS.register(
           "drop_soda_can",
           () ->

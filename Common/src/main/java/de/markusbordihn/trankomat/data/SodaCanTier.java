@@ -25,17 +25,17 @@ import net.minecraft.world.item.Items;
 
 public enum SodaCanTier implements StringRepresentable {
   // @formatter:off
-  TIER_0(0, 16, new ItemStack(Items.IRON_NUGGET, 5)),
-  TIER_1(1, 8, new ItemStack(Items.IRON_NUGGET, 9)),
-  TIER_2(2, 4, new ItemStack(Items.GOLD_NUGGET, 9), ItemStack.EMPTY),
+  TIER_0(0, 16, new ItemStack(Items.IRON_INGOT, 5)),
+  TIER_1(1, 8, new ItemStack(Items.IRON_INGOT, 9)),
+  TIER_2(2, 4, new ItemStack(Items.GOLD_INGOT, 9), ItemStack.EMPTY),
   TIER_3(3, 2, new ItemStack(Items.EMERALD, 3), ItemStack.EMPTY),
   TIER_4(4, 1, new ItemStack(Items.EMERALD, 10), ItemStack.EMPTY);
   // @formatter:on
 
   final int tierLevel;
   final int maxUses;
+  final ItemStack costB;
   ItemStack costA = ItemStack.EMPTY;
-  ItemStack costB = ItemStack.EMPTY;
 
   SodaCanTier(int tierLevel, int maxUses, ItemStack cost) {
     this.tierLevel = tierLevel;

@@ -28,8 +28,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.DistExecutor;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
 @Mod(Constants.MOD_ID)
 public class TrankOMat {
@@ -38,8 +36,7 @@ public class TrankOMat {
     final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
     // Use Forge to bootstrap the Common mod.
-    Constants.LOG.info("Initializing {} (Forge) ...", Constants.MOD_NAME);
-    CommonClass.init();
+    Constants.LOG.info("Initializing {} (NeoForge) ...", Constants.MOD_NAME);
 
     Constants.LOG.info("{} Blocks ...", Constants.LOG_REGISTER_PREFIX);
     ModBlocks.BLOCKS.register(modEventBus);
@@ -51,18 +48,6 @@ public class TrankOMat {
     ModSoundEvents.SOUNDS.register(modEventBus);
 
     DistExecutor.unsafeRunWhenOn(
-        Dist.CLIENT,
-        () ->
-            () -> {
-              ModTabs.CREATIVE_TABS.register(modEventBus);
-              NeoForge.EVENT_BUS.addListener(this::onItemTooltip);
-            });
-  }
-
-  // This method exists as a wrapper for the code in the Common project.
-  // It takes Forge's event object and passes the parameters along to
-  // the Common listener.
-  private void onItemTooltip(ItemTooltipEvent event) {
-    CommonClass.onItemTooltip(event.getItemStack(), event.getFlags(), event.getToolTip());
+        Dist.CLIENT, () -> () -> ModTabs.CREATIVE_TABS.register(modEventBus));
   }
 }

@@ -23,15 +23,15 @@ import de.markusbordihn.trankomat.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.RegistryObject;
 
 public class ModTabs {
 
   public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
       DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
-  protected static RegistryObject<CreativeModeTab> SODA_VENDING_MACHINES =
+  protected static DeferredHolder<CreativeModeTab, CreativeModeTab> SODA_VENDING_MACHINES =
       CREATIVE_TABS.register(
           "soda_vending_machines",
           () ->
@@ -41,7 +41,7 @@ public class ModTabs {
                   .title(Component.translatable("itemGroup.trank_o_mat.soda_vending_machines"))
                   .build());
 
-  protected static RegistryObject<CreativeModeTab> SODA_CANS =
+  protected static DeferredHolder<CreativeModeTab, CreativeModeTab> SODA_CANS =
       CREATIVE_TABS.register(
           "soda_cans",
           () ->

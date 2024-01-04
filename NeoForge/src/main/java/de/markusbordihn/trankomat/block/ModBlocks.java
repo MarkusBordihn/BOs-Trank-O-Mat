@@ -21,31 +21,30 @@ package de.markusbordihn.trankomat.block;
 
 import de.markusbordihn.trankomat.Constants;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.ForgeRegistries;
-import net.neoforged.neoforge.registries.RegistryObject;
 
 public class ModBlocks {
 
-  public static final DeferredRegister<Block> BLOCKS =
-      DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
+  public static final DeferredRegister.Blocks BLOCKS =
+      DeferredRegister.createBlocks(Constants.MOD_ID);
 
-  public static final RegistryObject<Block> DEPOSIT_MACHINE_TOP =
+  public static final DeferredBlock<Block> DEPOSIT_MACHINE_TOP =
       BLOCKS.register("deposit_machine_top", () -> SodaDepositMachineBlocks.DEPOSIT_MACHINE_TOP);
 
-  public static final RegistryObject<Block> SODA_DEPOSIT_MACHINE_01 =
+  public static final DeferredBlock<Block> SODA_DEPOSIT_MACHINE_01 =
       BLOCKS.register(
           "soda_deposit_machine_01", () -> SodaDepositMachineBlocks.SODA_DEPOSIT_MACHINE_01);
 
-  public static final RegistryObject<Block> VENDING_MACHINE =
+  public static final DeferredBlock<Block> VENDING_MACHINE =
       BLOCKS.register("vending_machine", () -> SodaVendingMachineBlocks.VENDING_MACHINE);
-  public static final RegistryObject<Block> VENDING_MACHINE_TOP =
+  public static final DeferredBlock<Block> VENDING_MACHINE_TOP =
       BLOCKS.register("vending_machine_top", () -> SodaVendingMachineBlocks.VENDING_MACHINE_TOP);
 
-  public static final RegistryObject<Block> SODA_VENDING_MACHINE_01 =
+  public static final DeferredBlock<Block> SODA_VENDING_MACHINE_01 =
       BLOCKS.register(
           "soda_vending_machine_01", () -> SodaVendingMachineBlocks.SODA_VENDING_MACHINE_01);
-  public static final RegistryObject<Block> SODA_VENDING_MACHINE_02 =
+  public static final DeferredBlock<Block> SODA_VENDING_MACHINE_02 =
       BLOCKS.register(
           "soda_vending_machine_02", () -> SodaVendingMachineBlocks.SODA_VENDING_MACHINE_02);
 
